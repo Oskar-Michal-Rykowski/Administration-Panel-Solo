@@ -1,4 +1,84 @@
 nav {
+  height: 100vh;
   background-color: black;
   color: white;
+}
+
+.logo-row {
+  position: relative;
+  padding: 20px 0;
+}
+
+.logo-row div {
+  position: absolute;
+}
+
+.logo-row div:last-of-type {
+  right: 10px;
+  font-size: 30px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.menu {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.bullet {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 15px 20px;
+  height: 50px;
+  position: relative;
+}
+
+.bullet:hover {
+  background-color: gray;
+  border-left: 4px solid orange;
+}
+
+.bullet div {
+  position: absolute;
+}
+
+.menu svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.bullet-name {
+  left: 70px;
+  top: 5px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.your-manager-photo {
+  width: 50px;
+  height: 50px;
+}
+
+.your-manager-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.your-manager-profile {
+  position: relative;
+}
+
+.your-manager-profile div {
+  position: absolute;
+}
+
+.your-manager-name {
+  line-height: 10px;
+  left: 70px;
 }
