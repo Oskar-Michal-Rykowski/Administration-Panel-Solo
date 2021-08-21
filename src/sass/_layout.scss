@@ -1,11 +1,19 @@
 body {
   display: flex;
-  background-color: gray;
+  background-color: orange;
 }
 
 nav {
-  height: 100vh;
+  // height: 100vh;
   background-color: black;
+  // color: white;
+}
+
+.navigation {
+  position: fixed;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
   color: white;
 }
 
@@ -99,8 +107,10 @@ nav {
 /* Upper-nav */
 
 .upper-nav {
+  position: fixed;
   background-color: white;
   height: 50px;
+  width: 84%;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -189,7 +199,7 @@ section:first-of-type {
 }
 
 .upper-logout {
-  width: 50px;
+  width: 55px;
   padding: 12px 14px;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
@@ -203,7 +213,8 @@ section:first-of-type {
 .section {
   background: white;
   height: 100vh;
-  margin: 10px;
+  margin: 60px 10px;
+  box-shadow: 2px 2px 4px #000000;
 }
 
 .section-title {
@@ -214,15 +225,81 @@ section:first-of-type {
   border-bottom: 1px solid gray;
 }
 
-.section-content {
+.section-content-date {
+  display: flex;
   margin: 0;
-  padding: 40px 250px;
+  padding: 40px 400px;
+  border-bottom: 1px solid gray;
 }
 
 .statistic-date {
-  width: 100%;
-  height: 20px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.date {
+  display: flex;
+  height: 35px;
+  line-height: 10px;
+  font-family: $brand-font;
+}
+
+.date-to {
+  border-left: 1px solid gray;
+}
+
+.btn-refresh {
   background-color: orange;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 14px;
+}
+
+.btn-refresh svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+
+.section-content-statistics {
+  display: flex;
+  margin: 0;
+  padding: 40px 300px;
+}
+
+.statistics-tables {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.table {
+  padding: 0;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  font-family: $brand-font;
+}
+
+.table-row h3,
+.table-row h5 {
+  top: 20;
+}
+
+.table-row h3 {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.table-row h5 {
+  right: 50px;
 }
 
 /* SVG */
