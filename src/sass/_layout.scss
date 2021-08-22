@@ -1,20 +1,20 @@
 body {
   display: flex;
-  background-color: orange;
+  background: $color-6;
 }
 
 nav {
-  // height: 100vh;
-  background-color: black;
-  // color: white;
+  background-color: $color-1;
+  padding-left: 0;
 }
 
 .navigation {
   position: fixed;
   margin: 0;
   height: 100vh;
-  width: 100%;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-row {
@@ -24,11 +24,14 @@ nav {
 
 .logo-row div {
   position: absolute;
+  display: flex;
+  justify-content: space-around;
 }
 
 .logo-row div:last-of-type {
-  right: 10px;
+  right: 30px;
   font-size: 30px;
+  color: $color-5;
 }
 
 .logo {
@@ -42,19 +45,20 @@ nav {
   display: flex;
   flex-direction: column;
   font-family: $brand-font;
+  color: $color-5;
 }
 
 .bullet {
   margin-left: -15px;
-  margin-right: -15px;
   padding: 15px 20px;
   height: 50px;
+  width: 254px;
   position: relative;
 }
 
 .bullet:hover {
-  background-color: gray;
-  border-left: 4px solid orange;
+  background-color: $color-14;
+  border-left: 4px solid $color-2;
   padding-left: 16px;
 }
 
@@ -69,7 +73,19 @@ nav {
 .menu svg {
   width: 20px;
   height: 20px;
-  fill: white;
+  fill: $color-5;
+}
+
+.nav-section-title {
+  color: $color-5;
+  font-family: $brand-font;
+}
+
+.section-border {
+  margin-left: -15px;
+  height: 2px;
+  width: 105%;
+  border-top: 1px solid $color-5;
 }
 
 .bullet-name {
@@ -99,9 +115,29 @@ nav {
   position: absolute;
 }
 
+.active-person {
+  position: absolute;
+  top: 2px;
+  left: 35px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.active-dot {
+  background-color: $color-10;
+}
+
 .your-manager-name {
   line-height: 10px;
   left: 70px;
+}
+
+.your-manager-name a {
+  text-decoration: none;
+  color: $color-4;
+  font-family: $brand-font;
 }
 
 /* Upper-nav */
@@ -109,10 +145,24 @@ nav {
 .upper-nav {
   position: fixed;
   background-color: white;
-  height: 50px;
+  height: 60px;
   width: 84%;
   display: flex;
   flex-direction: row-reverse;
+  box-shadow: $shadow;
+  color: $color-5;
+}
+
+.upper-nav svg {
+  fill: $color-5;
+}
+
+.upper-nav a {
+  text-decoration: none;
+  color: $color-4;
+  font-family: $brand-font;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 section:first-of-type {
@@ -121,23 +171,23 @@ section:first-of-type {
 
 .upper-pocket {
   position: relative;
-  width: 200px;
+  width: 230px;
   height: 100%;
-  border-left: 1px solid gray;
+  border-left: 1px solid $color-6;
 }
 
 .pocket-icon {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 15px;
+  top: 20px;
   left: 20px;
 }
+
 .pocket-amount {
   position: absolute;
-  bottom: -7px;
-  left: 55px;
-
+  bottom: -2px;
+  left: 70px;
   font-family: $brand-font;
   font-size: 14px;
 }
@@ -146,75 +196,75 @@ section:first-of-type {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 19px;
+  top: 24px;
   right: 20px;
 }
 
 .upper-bell {
   position: relative;
-  width: 50px;
-  border-left: 1px solid gray;
+  width: 60px;
+  border-left: 1px solid $color-6;
 }
 
 .upper-bell svg {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  margin: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 20px;
   z-index: 1;
 }
 
 .bell-notification {
   position: absolute;
-  top: 10px;
-  left: 27px;
-  width: 10px;
-  height: 10px;
+  top: 18px;
+  left: 30px;
+  width: 7px;
+  height: 7px;
   border-radius: 100%;
   z-index: 2;
 }
 
 .notification {
-  background-color: red;
+  background-color: $color-2;
 }
 
 .upper-account {
   position: relative;
   width: 180px;
-  border-left: 1px solid gray;
+  border-left: 1px solid $color-6;
 }
 
 .upper-account svg {
   position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 12px;
+  width: 20px;
+  height: 20px;
+  top: 20px;
   left: 10px;
 }
 
 .account-name {
   position: absolute;
-  top: 14px;
+  top: 20px;
   left: 45px;
 }
 
 .upper-logout {
-  width: 55px;
-  padding: 12px 14px;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+  width: 70px;
+  padding: 20px 23px;
+  border-left: 1px solid $color-6;
+  border-right: 1px solid $color-6;
 }
 
 .upper-logout svg {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .section {
   background: white;
   height: 100vh;
-  margin: 60px 10px;
-  box-shadow: 2px 2px 4px #000000;
+  margin: 73px 10px;
+  box-shadow: $shadow;
 }
 
 .section-title {
@@ -222,20 +272,20 @@ section:first-of-type {
   padding: 10px 20px;
   font-family: $brand-font;
   font-size: 10px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid $color-6;
 }
 
 .section-content-date {
   display: flex;
   margin: 0;
   padding: 40px 400px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid $color-6;
 }
 
 .statistic-date {
   height: 50px;
   border-radius: 5px;
-  border: 1px solid gray;
+  border: 1px solid $color-6;
   padding: 5px;
   font-size: 12px;
 }
@@ -248,11 +298,11 @@ section:first-of-type {
 }
 
 .date-to {
-  border-left: 1px solid gray;
+  border-left: 1px solid $color-6;
 }
 
 .btn-refresh {
-  background-color: orange;
+  background-color: $color-2;
   width: 50px;
   height: 50px;
   border-radius: 5px;
@@ -284,13 +334,13 @@ section:first-of-type {
 .table-row {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid gray;
+  border-bottom: 3px solid $color-6;
   font-family: $brand-font;
 }
 
 .table-row h3,
 .table-row h5 {
-  top: 20;
+  bottom: -10px;
 }
 
 .table-row h3 {
@@ -307,36 +357,51 @@ section:first-of-type {
 #Layer_1 {
   enable-background: new 0 0 17 16;
 }
+
 #Layer_2 {
   enable-background: new 0 0 14 13;
 }
+
 #Layer_3 {
   enable-background: new 0 0 18 10;
 }
+
 #Layer_4 {
   enable-background: new 0 0 14 13;
 }
+
 #Layer_5 {
   enable-background: new 0 0 9 14;
 }
+
 #Layer_6 {
   enable-background: new 0 0 13 13;
 }
+
 #Layer_7 {
   enable-background: new 0 0 14 15;
 }
+
 #Layer_8 {
   enable-background: new 0 0 17 18;
 }
+
 #Layer_9 {
   enable-background: new 0 0 11 7;
 }
+
 #Layer_10 {
   enable-background: new 0 0 18 19;
 }
+
 #Layer_11 {
   enable-background: new 0 0 19 19;
 }
+
 #Layer_12 {
   enable-background: new 0 0 19 15;
+}
+
+#Layer_13 {
+  enable-background: new 0 0 16 17;
 }
