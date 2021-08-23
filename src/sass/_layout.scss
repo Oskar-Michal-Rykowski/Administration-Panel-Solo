@@ -6,7 +6,10 @@ body {
 
 nav {
   background-color: $color-1;
-  padding-left: 0;
+}
+
+.nav {
+  padding: 0;
 }
 
 /* Navigation */
@@ -14,10 +17,12 @@ nav {
 .navigation {
   position: fixed;
   margin: 0;
+  width: 100%;
   height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .logo-row {
@@ -41,10 +46,12 @@ nav {
   line-height: 30px;
   font-size: 40px;
   font-family: $logo-font;
+  padding-left: 20px;
 }
 
 .menu {
   margin: 20px 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-family: $brand-font;
@@ -52,10 +59,10 @@ nav {
 }
 
 .bullet {
-  margin-left: -15px;
+  margin-left: 0;
   padding: 15px 20px;
   height: 50px;
-  width: 254px;
+  width: 100%;
   position: relative;
 }
 
@@ -82,14 +89,16 @@ nav {
 .nav-section-title {
   color: $color-5;
   font-family: $brand-font;
+  border-top: 1px solid $color-5;
+  padding-left: 20px;
 }
 
-.section-border {
-  margin-left: -15px;
-  height: 2px;
-  width: 105%;
-  border-top: 1px solid $color-5;
-}
+// .section-border {
+//   margin-left: -15px;
+//   height: 2px;
+//   width: 105%;
+//   border-top: 1px solid $color-5;
+// }
 
 .bullet-name {
   left: 70px;
@@ -112,6 +121,7 @@ nav {
 
 .your-manager-profile {
   position: relative;
+  padding-left: 20px;
 }
 
 .your-manager-profile div {
@@ -134,7 +144,7 @@ nav {
 
 .your-manager-name {
   line-height: 10px;
-  left: 70px;
+  left: 90px;
 }
 
 .your-manager-name a {
@@ -276,7 +286,8 @@ section:first-of-type {
   margin: 0;
   padding: 10px 20px;
   font-family: $brand-font;
-  font-size: 10px;
+  font-size: 8px;
+  color: $color-5;
   border-bottom: 1px solid $color-6;
 }
 
@@ -343,6 +354,8 @@ section:first-of-type {
   justify-content: space-between;
   border-bottom: 3px solid $color-6;
   font-family: $brand-font;
+  color: $color-5;
+  font-style: initial;
 }
 
 .table-row h3,
@@ -411,4 +424,8 @@ section:first-of-type {
 
 #Layer_13 {
   enable-background: new 0 0 16 17;
+}
+
+#Layer_14 {
+  enable-background: new 0 0 13 13;
 }
