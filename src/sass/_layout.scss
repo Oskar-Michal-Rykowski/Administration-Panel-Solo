@@ -1,3 +1,4 @@
+/* General */
 body {
   display: flex;
   background: $color-6;
@@ -7,6 +8,8 @@ nav {
   background-color: $color-1;
   padding-left: 0;
 }
+
+/* Navigation */
 
 .navigation {
   position: fixed;
@@ -260,6 +263,8 @@ section:first-of-type {
   height: 20px;
 }
 
+/* Content section - General */
+
 .section {
   background: white;
   height: 100vh;
@@ -274,6 +279,8 @@ section:first-of-type {
   font-size: 10px;
   border-bottom: 1px solid $color-6;
 }
+
+/* Content section - Statistics */
 
 .section-content-date {
   display: flex;
@@ -340,7 +347,7 @@ section:first-of-type {
 
 .table-row h3,
 .table-row h5 {
-  bottom: -10px;
+  bottom: 10px;
 }
 
 .table-row h3 {
