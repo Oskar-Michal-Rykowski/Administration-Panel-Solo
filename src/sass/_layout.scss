@@ -363,7 +363,7 @@ section:first-of-type {
   color: $color-5;
   width: 100%;
   line-height: 40px;
-  margin-top: 10px;
+  padding-top: 7px;
 }
 
 .table-row td:first-of-type {
@@ -435,6 +435,31 @@ section:first-of-type {
 .green {
   background: $color-10;
 }
+/* Second section */
+.table-row td:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 20px 0 0;
+}
+
+.table-row:first-of-type {
+  border-top: 2px solid $color-6;
+}
+
+.table-row svg {
+  width: 25px;
+  height: 25px;
+  margin: 0 20px;
+  fill: none;
+}
+
+.table-row:hover {
+  background: $color-6;
+}
+
+.table-row:hover svg {
+  fill: $color-2;
+}
 
 /* SVG */
 
@@ -492,4 +517,15 @@ section:first-of-type {
 
 #Layer_14 {
   enable-background: new 0 0 13 13;
+}
+
+#Layer_15 {
+  enable-background: new 0 0 18 10;
+  margin-top: 4px;
+  // fill: $color-2;
+}
+
+#Layer_16 {
+  enable-background: new 0 0 14 16;
+  // fill: $color-5;
 }
