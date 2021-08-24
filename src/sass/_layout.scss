@@ -129,9 +129,8 @@ nav {
 }
 
 .active-person {
-  position: absolute;
-  top: 2px;
-  left: 35px;
+  top: 1px;
+  left: 55px;
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -157,6 +156,7 @@ nav {
 
 .upper-nav {
   position: fixed;
+  z-index: 1;
   background-color: white;
   height: 60px;
   width: 84%;
@@ -278,8 +278,13 @@ section:first-of-type {
 .section {
   background: white;
   height: 100vh;
-  margin: 73px 10px;
+  margin: 10px 10px;
   box-shadow: $shadow;
+  z-index: 2;
+}
+
+.section-top {
+  margin-top: 73px;
 }
 
 .section-title {
@@ -335,6 +340,7 @@ section:first-of-type {
 
 .section-content-statistics {
   display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 40px 300px;
 }
@@ -352,24 +358,82 @@ section:first-of-type {
 .table-row {
   display: flex;
   justify-content: space-between;
-  border-bottom: 3px solid $color-6;
+  border-bottom: 2px solid $color-6;
   font-family: $brand-font;
   color: $color-5;
-  font-style: initial;
+  width: 100%;
+  line-height: 40px;
+  margin-top: 10px;
 }
 
-.table-row h3,
-.table-row h5 {
-  bottom: 10px;
+.table-row td:first-of-type {
+  font-weight: 900;
 }
 
-.table-row h3 {
+.statistics-chart-title h3 {
+  // font-weight: 900;
+  font-family: $brand-font;
+  font-size: 20px;
+  color: $color-5;
+  margin: 40px 0 0 0;
+}
+
+.legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px 150px;
+  font-family: $brand-font;
   font-size: 15px;
-  line-height: 30px;
+  color: $color-5;
+  margin: 40px 0;
 }
 
-.table-row h5 {
-  right: 50px;
+.legend-item {
+  background-color: $color-7;
+  padding: 0px 10px;
+  height: 40px;
+  width: 50px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.legend .legend-item:first-of-type {
+  width: 110px;
+}
+
+.legend .legend-item:nth-child(2) {
+  width: 80px;
+}
+
+.legend .legend-item:last-of-type {
+  background: none;
+  color: $color-4;
+}
+
+.legend-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  top: 15px;
+}
+
+.legend-item h3 {
+  line-height: 5px;
+  margin-left: 20px;
+}
+
+.turquoise {
+  background: $color-4;
+}
+
+.orange {
+  background: $color-2;
+}
+
+.green {
+  background: $color-10;
 }
 
 /* SVG */
