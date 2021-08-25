@@ -187,6 +187,7 @@ nav {
 .upper-nav div:hover {
   background: $color-7;
 }
+
 .upper-nav div:hover object {
   filter: grayscale(0%);
 }
@@ -525,6 +526,12 @@ section:first-of-type {
 .links:hover object:hover {
   opacity: 100%;
   filter: grayscale(0%);
+}
+
+.links button {
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .links-button {
