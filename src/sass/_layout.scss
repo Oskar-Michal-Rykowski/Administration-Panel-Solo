@@ -1,7 +1,7 @@
 /* General */
 body {
   display: flex;
-  background: $color-6;
+  background: $color-7;
 }
 
 nav {
@@ -42,6 +42,10 @@ nav {
   color: $color-5;
 }
 
+.logo-row div:last-of-type:hover {
+  color: $color-2;
+}
+
 .logo {
   line-height: 30px;
   font-size: 40px;
@@ -74,16 +78,21 @@ nav {
 
 .bullet:hover .bullet-name {
   left: 66px;
+  color: white;
+}
+
+.bullet:hover object {
+  opacity: 100%;
 }
 
 .bullet div {
   position: absolute;
 }
 
-.menu svg {
+.menu object {
   width: 20px;
   height: 20px;
-  fill: $color-5;
+  opacity: 50%;
 }
 
 .nav-section-title {
@@ -92,13 +101,6 @@ nav {
   border-top: 1px solid $color-5;
   padding-left: 20px;
 }
-
-// .section-border {
-//   margin-left: -15px;
-//   height: 2px;
-//   width: 105%;
-//   border-top: 1px solid $color-5;
-// }
 
 .bullet-name {
   left: 70px;
@@ -152,6 +154,10 @@ nav {
   font-family: $brand-font;
 }
 
+.your-manager-name a:hover {
+  color: $color-2;
+}
+
 /* Upper-nav */
 
 .upper-nav {
@@ -166,16 +172,28 @@ nav {
   color: $color-5;
 }
 
-.upper-nav svg {
-  fill: $color-5;
-}
-
 .upper-nav a {
   text-decoration: none;
   color: $color-4;
   font-family: $brand-font;
   font-size: 15px;
   line-height: 20px;
+}
+
+.upper-nav object {
+  filter: grayscale(100%);
+}
+
+.upper-nav div:hover {
+  background: $color-7;
+}
+.upper-nav div:hover object {
+  filter: grayscale(0%);
+}
+
+.upper-nav div:hover a,
+.upper-nav div:hover h2 {
+  color: $color-2;
 }
 
 section:first-of-type {
@@ -213,13 +231,17 @@ section:first-of-type {
   right: 20px;
 }
 
+.upper-pocket:hover .pocket-arrow {
+  animation: bounce 1s;
+}
+
 .upper-bell {
   position: relative;
   width: 60px;
   border-left: 1px solid $color-6;
 }
 
-.upper-bell svg {
+.upper-bell object {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -241,13 +263,17 @@ section:first-of-type {
   background-color: $color-2;
 }
 
+.upper-nav div:hover .bell-notification {
+  background: $color-5;
+}
+
 .upper-account {
   position: relative;
   width: 180px;
   border-left: 1px solid $color-6;
 }
 
-.upper-account svg {
+.upper-account object {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -268,7 +294,7 @@ section:first-of-type {
   border-right: 1px solid $color-6;
 }
 
-.upper-logout svg {
+.upper-logout object {
   width: 20px;
   height: 20px;
 }
@@ -277,7 +303,6 @@ section:first-of-type {
 
 .section {
   background: white;
-  height: 100vh;
   margin: 10px 10px;
   box-shadow: $shadow;
   z-index: 2;
@@ -332,8 +357,7 @@ section:first-of-type {
   padding: 14px;
 }
 
-.btn-refresh svg {
-  fill: white;
+.btn-refresh object {
   width: 20px;
   height: 20px;
 }
@@ -435,30 +459,63 @@ section:first-of-type {
 .green {
   background: $color-10;
 }
+
+.chart-img img {
+  object-fit: cover;
+  width: 100%;
+}
+
 /* Second section */
-.table-row td:last-of-type {
+
+.links td:last-of-type {
   display: flex;
   justify-content: space-between;
   padding: 3px 20px 0 0;
 }
 
-.table-row:first-of-type {
+.links td:first-of-type {
+  width: 150px;
+}
+
+.links:first-of-type {
   border-top: 2px solid $color-6;
 }
 
-.table-row svg {
+.links:last-of-type {
+  margin-bottom: 30px;
+}
+
+.links object {
   width: 25px;
   height: 25px;
   margin: 0 20px;
-  fill: none;
+  opacity: 0%;
 }
 
-.table-row:hover {
+.links:hover {
   background: $color-6;
 }
 
-.table-row:hover svg {
-  fill: $color-2;
+.links:hover object {
+  opacity: 100%;
+  filter: grayscale(100%);
+}
+
+.links:hover object:hover {
+  opacity: 100%;
+  filter: grayscale(0%);
+}
+
+.links-button {
+  // margin-bottom: 30px;
+  height: 40px;
+  width: 120px;
+  margin: 0 auto 30px;
+  background: $color-2;
+  border: none;
+  border-radius: 5px;
+  font-family: $brand-font;
+  color: white;
 }
 
 /* SVG */
@@ -528,4 +585,8 @@ section:first-of-type {
 #Layer_16 {
   enable-background: new 0 0 14 16;
   // fill: $color-5;
+}
+
+#Layer_17 {
+  enable-background: new 0 0 16 17;
 }
