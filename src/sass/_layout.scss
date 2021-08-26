@@ -46,6 +46,10 @@ body {
   font-size: 30px;
 }
 
+.menu-button p {
+  display: none;
+}
+
 .logo-row div {
   // position: absolute;
   // display: flex;
@@ -671,6 +675,7 @@ section:first-of-type {
   .upper-pocket {
     width: 50%;
   }
+
   .upper-bell {
     width: 12.5%;
   }
@@ -690,6 +695,7 @@ section:first-of-type {
   .statistic-date {
     width: 100%;
   }
+
   .section-content-statistics {
     padding: 40px 10px;
   }
