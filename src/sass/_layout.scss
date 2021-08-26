@@ -17,7 +17,6 @@ nav {
 .navigation {
   position: fixed;
   margin: 0;
-  width: 100%;
   height: 100vh;
   color: white;
   display: flex;
@@ -165,11 +164,12 @@ nav {
   z-index: 1;
   background-color: white;
   height: 60px;
-  width: 84%;
+  // width: 84%;
   display: flex;
   flex-direction: row-reverse;
   box-shadow: $shadow;
   color: $color-5;
+  padding: 0;
 }
 
 .upper-nav a {
@@ -199,6 +199,7 @@ nav {
 
 section:first-of-type {
   padding: 0;
+  // width: 100%;
 }
 
 .upper-pocket {
@@ -289,8 +290,8 @@ section:first-of-type {
 }
 
 .upper-logout {
-  width: 70px;
-  padding: 20px 23px;
+  width: 60px;
+  padding: 20px 21px;
   border-left: 1px solid $color-6;
   border-right: 1px solid $color-6;
 }
@@ -552,75 +553,40 @@ section:first-of-type {
   transition: 1s;
 }
 
-/* SVG */
+/* Media */
 
-#Layer_1 {
-  enable-background: new 0 0 17 16;
+@media (max-width: 1650px) {
+  .section-content-date {
+    padding: 40px 190px 40px 260px;
+  }
+
+  .section-content-statistics {
+    padding: 40px 100px;
+  }
 }
 
-#Layer_2 {
-  enable-background: new 0 0 14 13;
+@media (max-width: 1200px) {
+  .navigation {
+    padding: 0;
+  }
+
+  .section-content-date {
+    padding: 40px 50px 40px 100px;
+  }
 }
 
-#Layer_3 {
-  enable-background: new 0 0 18 10;
-}
+@media (max-width: 1000px) {
+  .section-content-date {
+    padding: 40px 30px 40px 60px;
+  }
 
-#Layer_4 {
-  enable-background: new 0 0 14 13;
-}
+  .bullet,
+  .nav-section {
+    position: absolute;
+    display: none;
+  }
 
-#Layer_5 {
-  enable-background: new 0 0 9 14;
-}
-
-#Layer_6 {
-  enable-background: new 0 0 13 13;
-}
-
-#Layer_7 {
-  enable-background: new 0 0 14 15;
-}
-
-#Layer_8 {
-  enable-background: new 0 0 17 18;
-}
-
-#Layer_9 {
-  enable-background: new 0 0 11 7;
-}
-
-#Layer_10 {
-  enable-background: new 0 0 18 19;
-}
-
-#Layer_11 {
-  enable-background: new 0 0 19 19;
-}
-
-#Layer_12 {
-  enable-background: new 0 0 19 15;
-}
-
-#Layer_13 {
-  enable-background: new 0 0 16 17;
-}
-
-#Layer_14 {
-  enable-background: new 0 0 13 13;
-}
-
-#Layer_15 {
-  enable-background: new 0 0 18 10;
-  margin-top: 4px;
-  // fill: $color-2;
-}
-
-#Layer_16 {
-  enable-background: new 0 0 14 16;
-  // fill: $color-5;
-}
-
-#Layer_17 {
-  enable-background: new 0 0 16 17;
+  .menu-button:hover + .bullet {
+    display: block;
+  }
 }
