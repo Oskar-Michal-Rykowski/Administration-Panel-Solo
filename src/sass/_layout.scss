@@ -4,9 +4,9 @@ body {
   background: $color-7;
 }
 
-nav {
-  background-color: $color-1;
-}
+// nav {
+//   background-color: $color-1;
+// }
 
 .nav {
   padding: 0;
@@ -15,35 +15,52 @@ nav {
 /* Navigation */
 
 .navigation {
+  background-color: $color-1;
   position: fixed;
   margin: 0;
   height: 100vh;
   color: white;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   padding: 0;
 }
 
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
 .logo-row {
-  position: relative;
+  // position: relative;
   padding: 20px 0;
+  margin-bottom: -50px;
+}
+
+.menu-row {
+  height: 1px;
+}
+
+.menu-button {
+  padding-left: 80%;
+  font-size: 30px;
 }
 
 .logo-row div {
-  position: absolute;
-  display: flex;
-  justify-content: space-around;
+  // position: absolute;
+  // display: flex;
+  // justify-content: space-around;
 }
 
-.logo-row div:last-of-type {
-  right: 30px;
-  font-size: 30px;
-  color: $color-5;
-}
+// .logo-row div:last-of-type {
+//   right: 30px;
+//   font-size: 30px;
+//   color: $color-5;
+// }
 
-.logo-row div:last-of-type:hover {
-  color: $color-2;
-}
+// .logo-row div:last-of-type:hover {
+//   color: $color-2;
+// }
 
 .logo {
   line-height: 30px;
@@ -573,20 +590,111 @@ section:first-of-type {
   .section-content-date {
     padding: 40px 50px 40px 100px;
   }
+
+  .calendar-icon {
+    display: none;
+  }
+
+  .legend {
+    padding: 5px 10px;
+  }
 }
 
 @media (max-width: 1000px) {
   .section-content-date {
     padding: 40px 30px 40px 60px;
   }
+}
 
-  .bullet,
-  .nav-section {
+@media (max-width: 766px) {
+  body {
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  section {
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .navigation {
+    z-index: 2;
+    height: 100px;
+    background-color: $color-1;
+    width: 100%;
+  }
+
+  .your-manager {
+    height: 150px;
+  }
+
+  .navigation ul li ul {
     position: absolute;
+    display: none;
+    background-color: $color-1;
+  }
+
+  .navigation ul li a:focus + ul {
+    display: block;
+  }
+
+  .upper-nav {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  // .section-content-date {
+  //   padding: 40px 0 40px 0px;
+  // }
+  .upper-nav {
+    justify-content: space-between;
+  }
+
+  .account-name {
     display: none;
   }
 
-  .menu-button:hover + .bullet {
-    display: block;
+  .upper-account {
+    width: 12.5%;
+  }
+
+  .upper-account object {
+    left: 50%;
+  }
+
+  .upper-pocket {
+    width: 50%;
+  }
+  .upper-bell {
+    width: 12.5%;
+  }
+
+  .upper-bell object {
+    margin: 20px 50%;
+  }
+
+  .bell-notification {
+    left: 70%;
+  }
+
+  .upper-logout {
+    width: 12.5%;
+  }
+
+  .statistic-date {
+    width: 100%;
+  }
+  .section-content-statistics {
+    padding: 40px 10px;
+  }
+
+  .statistics-tables {
+    flex-direction: column;
   }
 }
