@@ -4,6 +4,10 @@ body {
   background: $color-7;
 }
 
+// nav {
+//   background-color: $color-1;
+// }
+
 .nav {
   padding: 0;
 }
@@ -17,6 +21,7 @@ body {
   height: 100vh;
   color: white;
   display: flex;
+  // flex-direction: column;
   padding: 0;
 }
 
@@ -27,6 +32,7 @@ body {
 }
 
 .logo-row {
+  // position: relative;
   padding: 20px 0;
   margin-bottom: -50px;
 }
@@ -38,16 +44,27 @@ body {
 .menu-button {
   padding-left: 80%;
   font-size: 30px;
-  color: $color-5;
 }
 
 .menu-button p {
   display: none;
 }
 
-.menu-button:hover {
-  color: $color-2;
+.logo-row div {
+  // position: absolute;
+  // display: flex;
+  // justify-content: space-around;
 }
+
+// .logo-row div:last-of-type {
+//   right: 30px;
+//   font-size: 30px;
+//   color: $color-5;
+// }
+
+// .logo-row div:last-of-type:hover {
+//   color: $color-2;
+// }
 
 .logo {
   line-height: 30px;
@@ -62,10 +79,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: $brand-font;
-  color: $color-5;
-}
-
-.menu a {
   color: $color-5;
 }
 
@@ -172,6 +185,7 @@ body {
   z-index: 1;
   background-color: white;
   height: 60px;
+  // width: 84%;
   display: flex;
   flex-direction: row-reverse;
   box-shadow: $shadow;
@@ -206,11 +220,13 @@ body {
 
 section:first-of-type {
   padding: 0;
+  // width: 100%;
 }
 
 .upper-pocket {
   position: relative;
   width: 230px;
+  // height: 100%;
   border-left: 1px solid $color-6;
 }
 
@@ -422,6 +438,7 @@ section:first-of-type {
 }
 
 .statistics-chart-title h3 {
+  // font-weight: 900;
   font-family: $brand-font;
   font-size: 20px;
   color: $color-5;
@@ -496,7 +513,7 @@ section:first-of-type {
 .links td:last-of-type {
   display: flex;
   justify-content: space-between;
-  padding: 0px 15px 0 0;
+  padding: 3px 20px 0 0;
 }
 
 .links td:first-of-type {
@@ -513,14 +530,14 @@ section:first-of-type {
 }
 
 .links object {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   margin: 0 20px;
   opacity: 0%;
 }
 
 .table-row:hover {
-  background: $color-7;
+  background: $color-6;
 }
 
 .links:hover object {
@@ -636,6 +653,9 @@ section:first-of-type {
 }
 
 @media (max-width: 576px) {
+  // .section-content-date {
+  //   padding: 40px 0 40px 0px;
+  // }
   .upper-nav {
     justify-content: space-between;
   }
