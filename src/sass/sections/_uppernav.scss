@@ -139,3 +139,49 @@ section:first-of-type {
   width: 20px;
   height: 20px;
 }
+
+@media (max-width: 766px) {
+  .upper-nav {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .upper-nav div:hover {
+    background: white;
+  }
+
+  .account-name {
+    display: none;
+  }
+
+  .upper-account {
+    width: 12.5%;
+  }
+
+  .upper-account object {
+    left: 50%;
+  }
+
+  .upper-pocket {
+    width: 50%;
+  }
+
+  .upper-bell {
+    width: 12.5%;
+  }
+
+  .upper-bell object {
+    margin: 20px 50%;
+  }
+
+  .bell-notification {
+    left: 70%;
+  }
+
+  .upper-logout {
+    width: 12.5%;
+  }
+}

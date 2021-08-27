@@ -159,3 +159,51 @@
   object-fit: cover;
   width: 100%;
 }
+
+@media (max-width: 1650px) {
+  .section-content-date {
+    padding: 40px 190px 40px 260px;
+  }
+
+  .section-content-statistics {
+    padding: 40px 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  // .navigation {
+  //   padding: 0;
+  // }
+
+  .section-content-date {
+    padding: 40px 50px 40px 100px;
+  }
+
+  .calendar-icon {
+    display: none;
+  }
+
+  .legend {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-content-date {
+    padding: 40px 30px 40px 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .statistic-date {
+    width: 100%;
+  }
+
+  .section-content-statistics {
+    padding: 40px 10px;
+  }
+
+  .statistics-tables {
+    flex-direction: column;
+  }
+}

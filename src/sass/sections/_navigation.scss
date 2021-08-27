@@ -156,3 +156,36 @@
 .your-manager-name a:hover {
   color: $color-2;
 }
+
+@media (max-width: 1200px) {
+  .navigation {
+    padding: 0;
+  }
+}
+
+@media (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+
+  .navigation {
+    z-index: 2;
+    height: 100px;
+    background-color: $color-1;
+    width: 100%;
+  }
+
+  .your-manager {
+    height: 150px;
+  }
+
+  .navigation ul li ul {
+    position: absolute;
+    display: none;
+    background-color: $color-1;
+  }
+
+  .navigation ul li a:focus + ul {
+    display: block;
+  }
+}
