@@ -1,0 +1,141 @@
+.upper-nav {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  height: 60px;
+  // width: 84%;
+  display: flex;
+  flex-direction: row-reverse;
+  box-shadow: $shadow;
+  color: $color-5;
+  padding: 0;
+}
+
+.upper-nav a {
+  text-decoration: none;
+  color: $color-4;
+  font-family: $brand-font;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.upper-nav object {
+  filter: grayscale(100%);
+}
+
+.upper-nav div:hover {
+  background: $color-7;
+}
+
+.upper-nav div:hover object {
+  filter: grayscale(0%);
+}
+
+.upper-nav div:hover a,
+.upper-nav div:hover h2 {
+  color: $color-2;
+}
+
+section:first-of-type {
+  padding: 0;
+  // width: 100%;
+}
+
+.upper-pocket {
+  position: relative;
+  width: 230px;
+  // height: 100%;
+  border-left: 1px solid $color-6;
+}
+
+.pocket-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  left: 20px;
+}
+
+.pocket-amount {
+  position: absolute;
+  bottom: 0px;
+  left: 70px;
+  font-family: $brand-font;
+  font-size: 14px;
+}
+
+.pocket-arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 24px;
+  right: 20px;
+}
+
+.upper-pocket:hover .pocket-arrow {
+  animation: bounce 1s;
+}
+
+.upper-bell {
+  position: relative;
+  width: 60px;
+  border-left: 1px solid $color-6;
+}
+
+.upper-bell object {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  z-index: 1;
+}
+
+.bell-notification {
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.notification {
+  background-color: $color-2;
+}
+
+.upper-nav div:hover .bell-notification {
+  background: $color-5;
+}
+
+.upper-account {
+  position: relative;
+  width: 180px;
+  border-left: 1px solid $color-6;
+}
+
+.upper-account object {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  left: 10px;
+}
+
+.account-name {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+}
+
+.upper-logout {
+  width: 60px;
+  padding: 20px 21px;
+  border-left: 1px solid $color-6;
+  border-right: 1px solid $color-6;
+}
+
+.upper-logout object {
+  width: 20px;
+  height: 20px;
+}

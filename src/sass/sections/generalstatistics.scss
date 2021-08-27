@@ -1,0 +1,161 @@
+.section-content-date {
+  display: flex;
+  margin: 0;
+  padding: 40px 400px;
+  border-bottom: 1px solid $color-6;
+}
+
+.statistic-date {
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid $color-6;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.date {
+  display: flex;
+  height: 35px;
+  line-height: 10px;
+  font-family: $brand-font;
+}
+
+.date-to {
+  border-left: 1px solid $color-6;
+}
+
+.calendar-icon {
+  padding-left: 10px;
+  filter: grayscale(100%);
+}
+
+.calendar-icon:hover {
+  filter: grayscale(0%);
+}
+
+.calendar-icon object {
+  width: 25px;
+  margin-top: 5px;
+}
+
+.btn-refresh {
+  background-color: $color-2;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 14px;
+  border: none;
+}
+
+.btn-refresh object {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-refresh:hover object {
+  transform: rotate(360deg);
+  transition: 1s;
+}
+
+.section-content-statistics {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 40px 300px;
+}
+
+.statistics-tables {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.table {
+  padding: 0;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $color-6;
+  font-family: $brand-font;
+  color: $color-5;
+  width: 100%;
+  line-height: 40px;
+  padding-top: 7px;
+}
+
+.table-row td:first-of-type {
+  font-weight: 900;
+}
+
+.statistics-chart-title h3 {
+  // font-weight: 900;
+  font-family: $brand-font;
+  font-size: 20px;
+  color: $color-5;
+  margin: 40px 0 0 0;
+}
+
+.legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px 150px;
+  font-family: $brand-font;
+  font-size: 15px;
+  color: $color-5;
+  margin: 40px 0;
+}
+
+.legend-item {
+  background-color: $color-7;
+  padding: 0px 10px;
+  height: 40px;
+  width: 50px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.legend .legend-item:first-of-type {
+  width: 110px;
+}
+
+.legend .legend-item:nth-child(2) {
+  width: 80px;
+}
+
+.legend .legend-item:last-of-type {
+  background: none;
+  color: $color-4;
+}
+
+.legend-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  top: 15px;
+}
+
+.legend-item h3 {
+  line-height: 5px;
+  margin-left: 20px;
+}
+
+.turquoise {
+  background: $color-4;
+}
+
+.orange {
+  background: $color-2;
+}
+
+.green {
+  background: $color-10;
+}
+
+.chart-img img {
+  object-fit: cover;
+  width: 100%;
+}
