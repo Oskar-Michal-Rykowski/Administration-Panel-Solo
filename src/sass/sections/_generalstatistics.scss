@@ -90,7 +90,6 @@
 }
 
 .statistics-chart-title h3 {
-  // font-weight: 900;
   font-family: $brand-font;
   font-size: 20px;
   color: $color-5;
@@ -171,10 +170,6 @@
 }
 
 @media (max-width: 1200px) {
-  // .navigation {
-  //   padding: 0;
-  // }
-
   .section-content-date {
     padding: 40px 50px 40px 100px;
   }
