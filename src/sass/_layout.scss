@@ -37,6 +37,10 @@ body {
   margin-bottom: -50px;
 }
 
+.menu a {
+  color: $color-5;
+}
+
 .menu-row {
   height: 1px;
 }
@@ -44,6 +48,11 @@ body {
 .menu-button {
   padding-left: 80%;
   font-size: 30px;
+  color: $color-5;
+}
+
+.menu-button:hover {
+  color: $color-2;
 }
 
 .menu-button p {
@@ -509,6 +518,11 @@ section:first-of-type {
 }
 
 /* Second section */
+
+.links a {
+  text-decoration: none;
+  color: $color-4;
+}
 
 .links td:last-of-type {
   display: flex;
