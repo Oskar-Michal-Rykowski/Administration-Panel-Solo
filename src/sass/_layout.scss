@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   background: $color-7;
@@ -25,6 +29,14 @@ body {
   font-size: 8px;
   color: $color-5;
   border-bottom: 1px solid $color-6;
+}
+
+.page {
+  display: none;
+}
+
+.active-page {
+  display: block;
 }
 
 @media (max-width: 766px) {
