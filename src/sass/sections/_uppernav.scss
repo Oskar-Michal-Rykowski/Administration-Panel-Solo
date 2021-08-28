@@ -187,3 +187,9 @@ section:first-of-type {
     left: 35%;
   }
 }
+
+@media (max-width: 435px) {
+  .pocket-arrow {
+    display: none;
+  }
+}
