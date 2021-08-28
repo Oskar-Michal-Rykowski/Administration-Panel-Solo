@@ -1,6 +1,6 @@
 import { select, classNames } from './settings.js';
 
-class showingPages {
+class navigationWork {
   constructor() {
     const thisApp = this;
 
@@ -56,4 +56,4 @@ class showingPages {
 }
 
 // eslint-disable-next-line no-unused-vars
-const app = new showingPages();
+const app = new navigationWork();
