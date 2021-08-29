@@ -177,13 +177,16 @@
     height: 150px;
   }
 
-  .navigation ul li ul {
-    position: absolute;
+  .navigation-dropdown {
+    // position: absolute;
     display: none;
     background-color: $color-1;
   }
 
-  .navigation ul li a:focus + ul {
+  .active {
     display: block;
   }
+  // .navigation ul li a:focus + ul {
+  //   display: block;
+  // }
 }

@@ -16,6 +16,14 @@ class navigationWork {
 
     thisApp.menuLinks = document.querySelectorAll(select.menuLinks);
     console.log('thisApp.menuLinks', thisApp.menuLinks);
+
+    //Find hamburger
+    thisApp.hamburger = document.querySelector(select.hamburger);
+
+    //Find navigation-dropdown
+    thisApp.navigationDropdown = document.querySelector(
+      select.navigationDropdown
+    );
   }
 
   initActions() {
@@ -46,8 +54,25 @@ class navigationWork {
 
         //add class active page
         page.classList.add(classNames.elementStatus.activePage);
+
+        navigationDropdown();
       });
     }
+
+    //Hamburger working
+    //Function
+    function navigationDropdown() {
+      thisApp.navigationDropdown.classList.toggle(
+        classNames.elementStatus.activeMenu
+      );
+    }
+
+    //Add eventListener to hamburger
+    thisApp.hamburger.addEventListener('click', function (event) {
+      event.preventDefault();
+      navigationDropdown();
+    });
+    //if clicked toggle class active
   }
 }
 
