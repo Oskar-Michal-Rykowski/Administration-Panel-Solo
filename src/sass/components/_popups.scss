@@ -22,7 +22,7 @@
 }
 
 .modal {
-  max-width: 600px;
+  max-width: 1200px;
   margin: auto;
   background-color: #ffffff;
   position: relative;
@@ -119,7 +119,7 @@
 //LOGIN
 
 .popup-login {
-  width: 100%;
+  width: 600px;
   height: 200px;
 }
 
@@ -160,7 +160,8 @@
   margin-left: 0;
 }
 
-.popup-login button {
+.popup-login button,
+.popup-message button {
   width: 130px;
   bottom: 0;
   height: 40px;
@@ -171,7 +172,8 @@
   color: white;
 }
 
-.popup-login button:hover {
+.popup-login button:hover,
+.popup-message button:hover {
   background: white;
   border: 1px solid $color-2;
   color: $color-2;
@@ -186,17 +188,89 @@
 }
 
 .popup-message .chat-photo {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   margin-top: 60px;
 }
 
 .popup-message h3 {
   height: 50px;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-left: 15px;
   font-family: $brand-font;
   font-size: 40px;
+}
+
+.border-message-1 {
+  top: 165px;
+}
+
+.border-message-2 {
+  bottom: 100px;
+}
+
+.manager-presence {
+  position: absolute;
+  top: 120px;
+  left: 125px;
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-family: $brand-font;
+  font-size: 13px;
+  color: white;
+  border-radius: 5px;
+}
+
+.textarea {
+  position: absolute;
+  display: flex;
+  // flex-direction: row;
+  // justify-content: start;
+  width: 1200px;
+  height: 40px;
+  margin-right: 0;
+  // background: red;
+  bottom: 30px;
+}
+
+.popup-message textarea {
+  // position: absolute;
+  // width: 500px;
+  // bottom: 30px;
+  width: 100%;
+  left: 0px;
+  height: 40px;
+  padding: 10px 40px;
+  font-family: $brand-font;
+  color: $color-5;
+  border: 1px solid $color-5;
+  border-radius: 5px;
+}
+
+.textarea form {
+  display: flex;
+  flex-direction: row;
+}
+
+.textarea button {
+  width: 100%;
+  // right: 0;
+  // margin-left: 0;
+  // bottom: 30px;
+}
+
+.text-put,
+.text-send {
+  margin: 0;
+}
+
+.message-icon {
+  position: absolute;
+  width: 17px;
+  bottom: 10px;
+  left: 25px;
 }
 
 @media (max-width: 766px) {
