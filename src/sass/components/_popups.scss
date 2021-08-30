@@ -34,14 +34,15 @@
   position: absolute;
   font-family: $brand-font;
   color: $color-5;
-  top: 10px;
+
+  top: 0px;
 }
 
 .popup-border {
   position: absolute;
   width: 100%;
   border-bottom: 1px solid $color-6;
-  top: 70px;
+  top: 55px;
   left: 0;
 }
 
@@ -58,10 +59,11 @@
 
 .modal .btn-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 5px;
   padding: 5px 10px;
   font-family: $brand-font;
+  font-size: 20px;
   color: $color-5;
   text-decoration: none;
 }
@@ -71,6 +73,15 @@
 .popup-quit {
   width: 400px;
   height: 150px;
+}
+
+.popup-quit h4 {
+  font-size: 20px;
+  top: 0px;
+}
+
+.popup-quit .popup-border {
+  top: 70px;
 }
 
 .cancel {
@@ -108,13 +119,13 @@
 //LOGIN
 
 .popup-login {
-  width: 1000px;
+  width: 100%;
   height: 200px;
 }
 
 .popup-login form {
   position: absolute;
-  width: 400px;
+  width: 350px;
   margin: 90px 20px;
   height: 50px;
   display: flex;
@@ -128,12 +139,29 @@
   font-size: 13px;
 }
 
+.popup-login .field img {
+  position: absolute;
+  width: 20px;
+}
+
+.login-icon {
+  left: 15px;
+  bottom: 10px;
+}
+
+.password-icon {
+  left: 190px;
+  bottom: 13px;
+}
+
 .popup-login input {
-  width: 190px;
+  padding-left: 40px;
+  width: 170px;
   margin-left: 0;
 }
 
 .popup-login button {
+  width: 130px;
   bottom: 0;
   height: 40px;
   background: $color-2;
@@ -150,7 +178,29 @@
   transition: 1s;
 }
 
+//MESSAGE
+
+.popup-message {
+  width: 100%;
+  height: 600px;
+}
+
+.popup-message .chat-photo {
+  width: 60px;
+  height: 60px;
+  margin-top: 60px;
+}
+
+.popup-message h3 {
+  height: 50px;
+  margin-top: 80px;
+  margin-left: 15px;
+  font-family: $brand-font;
+  font-size: 40px;
+}
+
 @media (max-width: 766px) {
+  //LOGIN
   .popup-login {
     width: 300px;
     height: 290px;
@@ -169,4 +219,11 @@
   .popup-login button {
     bottom: -120px;
   }
+
+  .password-icon {
+    left: 15px;
+    bottom: -47px;
+  }
+
+  //MESSAGE
 }
