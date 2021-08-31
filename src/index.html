@@ -452,68 +452,82 @@
                     <div class="section-title">
                         <h1>PERSONAL DATA</h1>
                     </div>
-                    <div class="section-content-statistics">
+                    <div class="">
                         <form action="">
-                            <div class="field">
-                                <label>Name</label>
-                                <input type="text" name="user-name" value="Leonardo">
+                            <div class="form-section">
+                                <div class="field">
+                                    <label>Name</label>
+                                    <input type="text" name="user-name" placeholder="Leonardo">
+                                </div>
+                                <div class="field">
+                                    <label>Surname</label>
+                                    <input type="text" name="user-surname" placeholder="Dicaprio">
+                                </div>
+                                <div class="field">
+                                    <label>E-mail</label>
+                                    <input type="email" name="user-email" placeholder="leo@kodilla.com" required>
+                                </div>
+                                <div class="field">
+                                    <label>Phone number</label>
+                                    <input type="tel" name="user-phone" placeholder="+48 666 666 666" maxlength="20">
+                                </div>
+                            </div> <!-- </form> -->
+                            <!-- </div>
+                    <div class="section-content-statistics form-section"> -->
+                            <!-- <form action=""> -->
+                            <div class="form-section">
+                                <div class="field">
+                                    <label>Skype</label>
+                                    <input type="text" name="user-skype" maxlength="20">
+                                </div>
+                                <div class="field">
+                                    <label>ICQ</label>
+                                    <input type="text" name="user-icq" maxlength="20">
+                                </div>
+                                <div class="field">
+                                    <label>msn</label>
+                                    <input type="email" name="user-msn" maxlength="20">
+                                </div>
                             </div>
-                            <div class="field">
-                                <label>Surname</label>
-                                <input type="text" name="user-surname" value="Dicaprio">
+                            <!-- </form> -->
+                            <!-- </div>
+                    <div class="section-content-statistics form-section"> -->
+                            <!-- <form action=""> -->
+                            <div class="form-section">
+                                <div class="field">
+                                    <label>Wallet</label>
+                                    <input type="text" name="user-wallet">
+                                </div>
                             </div>
-                            <div class="field">
-                                <label>E-mail</label>
-                                <input type="email" name="user-email" value="leo@kodilla.com" required>
+                            <!-- </form> -->
+                            <!-- </div>
+                    <div class="section-content-statistics form-section"> -->
+                            <!-- <form action=""> -->
+                            <div class="form-section">
+                                <!-- <div class="field"> -->
+
+                                <div class="field">
+                                    <label>Password</label>
+                                    <input type="password" name="user-password">
+                                </div>
+                                <div class="field">
+                                    <label>Repeat</label>
+                                    <input type="password" name="user-repeat">
+                                </div>
+                                <!-- <button href="#" class="hide" type="submit">Save</button> -->
+                                <!-- </div> -->
                             </div>
-                            <div class="field">
-                                <label>Phone number</label>
-                                <input type="tel" name="user-phone" value="+48 666 666 666" maxlength="20">
+
+
+                            <div class="form-section section-button">
+
+
+                                <!-- </div>
+                    <div class="section-content-statistics form-section"> -->
+                                <button href="#" class="form-button" type="submit">Save</button>
+
                             </div>
-                            <button href="#" class="hide" type="submit">Save</button>
                         </form>
-                    </div>
-                    <div class="section-content-statistics form-section">
-                        <form action="">
-                            <div class="field">
-                                <label>Skype</label>
-                                <input type="text" name="user-skype" maxlength="20">
-                            </div>
-                            <div class="field">
-                                <label>ICQ</label>
-                                <input type="text" name="user-icq" maxlength="20">
-                            </div>
-                            <div class="field">
-                                <label>msn</label>
-                                <input type="email" name="user-msn" maxlength="20">
-                            </div>
-                            <button href="#" class="hide" type="submit">Save</button>
-                        </form>
-                    </div>
-                    <div class="section-content-statistics form-section">
-                        <form action="">
-                            <div class="field">
-                                <label>Wallet</label>
-                                <input type="text" name="user-wallet">
-                            </div>
-                            <button href="#" class="hide" type="submit">Save</button>
-                        </form>
-                    </div>
-                    <div class="section-content-statistics form-section">
-                        <form action="">
-                            <div class="field">
-                                <label>Password</label>
-                                <input type="password" name="user-password">
-                            </div>
-                            <div class="field">
-                                <label>Repeat</label>
-                                <input type="password" name="user-repeat">
-                            </div>
-                            <button href="#" class="hide" type="submit">Save</button>
-                        </form>
-                    </div>
-                    <div class="section-content-statistics form-section">
-                        <button href="#" class="form-button" type="submit">Save</button>
                     </div>
                 </div>
             </section>
@@ -534,7 +548,8 @@
         </div>
 
         <div class="modal popup-message show">
-            <div class="btn-close js--close-modal">x</div>
+            <a href="#" class="btn-close js--close-modal">x
+            </a>
 
             <h4>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h4>
 
@@ -545,17 +560,21 @@
             <div class="manager-presence active-dot">online</div>
 
             <div class="popup-border border-message-1"></div>
+
+
+
+
             <div class="popup-border border-message-2"></div>
 
             <div class="textarea">
                 <form>
-                    <div class="col-10 text-put">
+                    <div class="col-9 text-put">
                         <textarea name="message">Enter the message</textarea>
                     </div>
-                    <div class="col-2 text-send">
-                        <button type="button" class="col-2">Send</button>
+                    <div class="col-3 text-send">
+                        <button type="submit" class="col-2">Send</button>
                     </div>
-                    <img class="message-icon" src="images/icons/message.svg">
+                    <img class="message-icon" src="images/icons/message.svg" alt="message">
                 </form>
             </div>
 

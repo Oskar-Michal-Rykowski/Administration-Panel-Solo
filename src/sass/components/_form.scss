@@ -34,13 +34,21 @@ form .field {
 }
 
 .form-section {
-  border-top: 1px solid $color-6;
+  padding: 30px 300px;
+  border-bottom: 1px solid $color-6;
+}
+
+.section-button {
+  height: 100px;
+  // margin: 30px auto;
 }
 
 .form-button {
+  position: absolute;
+  left: 40%;
   height: 40px;
   width: 120px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   background: $color-2;
   border: none;
   border-radius: 5px;
@@ -60,7 +68,47 @@ form .field {
     flex-direction: column;
   }
 
+  .form-section {
+    padding: 30px 50px 30px 150px;
+  }
+
   form input {
     width: 350px;
+  }
+
+  .form-button {
+    left: 160px;
+  }
+}
+
+@media (max-width: 960px) {
+  form input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-section {
+    padding: 30px 60px;
+  }
+
+  form input {
+    width: 400px;
+  }
+
+  .form-button {
+    left: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  form input {
+    width: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  form input {
+    width: 250px;
   }
 }
