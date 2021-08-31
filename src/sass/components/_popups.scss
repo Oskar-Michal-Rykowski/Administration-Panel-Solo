@@ -134,7 +134,6 @@
 }
 
 .popup-login form .field {
-  //   width: 30%;
   margin-left: 5px;
   font-size: 13px;
 }
@@ -183,30 +182,30 @@
 //MESSAGE
 
 .popup-message {
+  flex-direction: column;
   width: 100%;
   height: 600px;
 }
 
-.popup-message .chat-photo {
+.short-title {
+  display: none;
+}
+
+.interlocutor-profile .chat-photo {
+  position: relative;
   width: 80px;
   height: 80px;
   margin-top: 60px;
 }
 
-.popup-message h3 {
+.interlocutor-profile h3 {
+  position: absolute;
   height: 50px;
-  margin-top: 60px;
-  margin-left: 15px;
+
+  top: 30px;
+  left: 125px;
   font-family: $brand-font;
   font-size: 40px;
-}
-
-.border-message-1 {
-  top: 165px;
-}
-
-.border-message-2 {
-  bottom: 100px;
 }
 
 .manager-presence {
@@ -223,23 +222,31 @@
   border-radius: 5px;
 }
 
+.border-message-1 {
+  top: 165px;
+}
+
+.border-message-2 {
+  bottom: 100px;
+}
+
+.messages {
+  width: 100%;
+  margin-top: 20px;
+  height: 320px;
+}
+
 .textarea {
-  position: absolute;
   display: flex;
-  // flex-direction: row;
-  // justify-content: start;
   width: 1200px;
   height: 40px;
-  margin-right: 0;
-  // background: red;
-  bottom: 30px;
+
+  margin-top: 40px;
 }
 
 .popup-message textarea {
-  // position: absolute;
-  width: 500px;
-  // bottom: 30px;
-  width: 100%;
+  width: 1015px;
+
   left: 0px;
   height: 40px;
   padding: 10px 40px;
@@ -251,27 +258,98 @@
 }
 
 .textarea form {
-  display: flex;
-  flex-direction: row;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .textarea button {
-  width: 100%;
-  // right: 0;
-  // margin-left: 0;
-  // bottom: 30px;
-}
-
-.text-put,
-.text-send {
-  margin: 0;
+  width: 100px;
+  right: 30px;
+  margin-left: 0;
+  bottom: 30px;
+  font-size: 20px;
 }
 
 .message-icon {
   position: absolute;
   width: 17px;
-  bottom: 10px;
-  left: 25px;
+  bottom: 40px;
+  left: 42px;
+}
+
+.answer {
+  background: $color-6;
+  max-width: max-content;
+  padding: 10px 20px 10px 20px;
+  margin-top: 30px;
+  font-family: $brand-font;
+  border-radius: 3px;
+  position: relative;
+}
+
+.answer::before {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 20px solid $color-6;
+}
+
+.my-message {
+  background: $color-5;
+  color: white;
+  max-width: max-content;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  font-family: $brand-font;
+  border-radius: 3px;
+  position: relative;
+}
+
+.my-message::after {
+  position: absolute;
+  content: '';
+  bottom: -15px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid $color-5;
+}
+
+@media (max-width: 1250px) {
+  .popup-message {
+    width: 800px;
+    height: 600px;
+  }
+
+  .popup-message textarea {
+    width: 630px;
+  }
+
+  .textarea button {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .popup-message {
+    width: 400px;
+    height: 600px;
+  }
+
+  .popup-message .full-title {
+    font-size: 15px;
+  }
+
+  .popup-message textarea {
+    width: 260px;
+  }
 }
 
 @media (max-width: 766px) {
@@ -301,4 +379,35 @@
   }
 
   //MESSAGE
+}
+
+@media (max-width: 460px) {
+  .popup-message {
+    width: 360px;
+    height: 600px;
+  }
+
+  .popup-message textarea {
+    width: 200px;
+  }
+
+  .message-icon {
+    display: none;
+  }
+
+  .popup-message textarea {
+    padding-left: 20px;
+  }
+
+  .full-title {
+    display: none;
+  }
+
+  .short-title {
+    display: inline;
+  }
+
+  .textarea button {
+    padding-left: 7px;
+  }
 }

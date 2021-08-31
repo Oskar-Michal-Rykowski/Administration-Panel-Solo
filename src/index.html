@@ -471,10 +471,7 @@
                                     <label>Phone number</label>
                                     <input type="tel" name="user-phone" placeholder="+48 666 666 666" maxlength="20">
                                 </div>
-                            </div> <!-- </form> -->
-                            <!-- </div>
-                    <div class="section-content-statistics form-section"> -->
-                            <!-- <form action=""> -->
+                            </div>
                             <div class="form-section">
                                 <div class="field">
                                     <label>Skype</label>
@@ -489,22 +486,15 @@
                                     <input type="email" name="user-msn" maxlength="20">
                                 </div>
                             </div>
-                            <!-- </form> -->
-                            <!-- </div>
-                    <div class="section-content-statistics form-section"> -->
-                            <!-- <form action=""> -->
+
                             <div class="form-section">
                                 <div class="field">
                                     <label>Wallet</label>
                                     <input type="text" name="user-wallet">
                                 </div>
                             </div>
-                            <!-- </form> -->
-                            <!-- </div>
-                    <div class="section-content-statistics form-section"> -->
-                            <!-- <form action=""> -->
+
                             <div class="form-section">
-                                <!-- <div class="field"> -->
 
                                 <div class="field">
                                     <label>Password</label>
@@ -514,16 +504,13 @@
                                     <label>Repeat</label>
                                     <input type="password" name="user-repeat">
                                 </div>
-                                <!-- <button href="#" class="hide" type="submit">Save</button> -->
-                                <!-- </div> -->
+
                             </div>
 
 
                             <div class="form-section section-button">
 
 
-                                <!-- </div>
-                    <div class="section-content-statistics form-section"> -->
                                 <button href="#" class="form-button" type="submit">Save</button>
 
                             </div>
@@ -536,7 +523,10 @@
 
     <!-- Modale -->
 
-    <div class="overlay show" id="overlay">
+
+    <div class="overlay" id="overlay">
+
+        <!-- Quit -->
         <div class="modal popup-quit">
 
             <h4>Do you really want to Quit?</h4>
@@ -547,32 +537,43 @@
             <button type="button" class="js--close-modal quit">Quit</button>
         </div>
 
-        <div class="modal popup-message show">
+        <!-- Message -->
+        <div class="modal popup-message">
             <a href="#" class="btn-close js--close-modal">x
             </a>
 
-            <h4>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h4>
+            <h4 class="full-title">ONLINE CHAT WITH YOUR PERSONAL MANAGER</h4>
+            <h4 class="short-title">CHAT WITH YOUR MANAGER</h4>
 
             <div class="popup-border"></div>
 
-            <div class="your-manager-photo chat-photo"><img src="images/Paulo_Coelho.jpg" alt="manager"></div>
-            <h3>Paulo C.</h3>
-            <div class="manager-presence active-dot">online</div>
+            <div class="interlocutor-profile">
+                <div class="your-manager-photo chat-photo"><img src="images/Paulo_Coelho.jpg" alt="manager"></div>
+                <h3>Paulo C.</h3>
+                <div class="manager-presence active-dot">online</div>
+            </div>
 
             <div class="popup-border border-message-1"></div>
+            <div class="messages">
+                <div class="answer">Hello. Can I help you?</div>
 
+                <div class="my-message">Hello! I would like to know about Postback.</div>
 
+                <div class="answer">Ok. 5 min..</div>
 
+            </div>
 
             <div class="popup-border border-message-2"></div>
 
             <div class="textarea">
                 <form>
-                    <div class="col-9 text-put">
-                        <textarea name="message">Enter the message</textarea>
+                    <div class="text-put">
+                        <textarea name="message" placeholder="Enter the message"></textarea>
                     </div>
-                    <div class="col-3 text-send">
-                        <button type="submit" class="col-2">Send</button>
+                    <div class="text-send">
+                        <button type="submit" class="col-2">
+                            Send
+                        </button>
                     </div>
                     <img class="message-icon" src="images/icons/message.svg" alt="message">
                 </form>
@@ -580,6 +581,7 @@
 
         </div>
 
+        <!-- Login -->
         <div class="modal popup-login">
             <a href="#" class="btn-close js--close-modal">x
             </a>
@@ -590,12 +592,10 @@
 
             <form action="">
                 <div class="field">
-                    <!-- <label>Login</label> -->
                     <input type="text" name="user-login" value="Login">
                     <img class="login-icon" src="images/icons/login.svg" alt="Login">
                 </div>
                 <div class="field">
-                    <!-- <label>Repeat</label> -->
                     <input type="password" name="user-password" value="Password">
                     <img class="password-icon" src="images/icons/password.svg" alt="Password">
                 </div>
