@@ -1,0 +1,76 @@
+//General
+
+.section-big-table {
+  margin: 20px 20px;
+}
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.section-big-table .table-row {
+  font-family: $brand-font;
+  font-weight: 900;
+  font-size: 12px;
+  justify-content: space-between;
+}
+
+.section-big-table .table-row td {
+  width: 100px;
+  //   margin-right: 20px;
+  //   margin-left: 0;
+
+  text-align: center;
+}
+
+//HEAD
+
+//BODY
+.section-big-table tbody .table-row {
+  color: $color-14;
+}
+//FOOT
+
+.section-big-table tfoot td {
+  height: 100px;
+  padding: 30px 0 10px 0;
+}
+
+.table-foot {
+  height: 50px;
+  width: max-content;
+  margin: auto;
+}
+
+.table-foot img {
+  width: 10px;
+  margin: 0 20px;
+}
+
+.table-foot button {
+  border-radius: 2px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  color: $color-4;
+  font-family: $brand-font;
+  background: none;
+}
+
+.table-foot .active-button {
+  background: $color-6;
+  color: $color-5;
+}
+
+//DETAILS
+
+.details .table-row td:nth-child(3) {
+  width: 50px;
+}
