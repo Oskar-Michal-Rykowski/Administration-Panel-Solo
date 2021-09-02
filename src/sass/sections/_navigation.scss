@@ -67,17 +67,20 @@
   position: relative;
 }
 
+.bullet:focus,
 .bullet:hover {
   background-color: $color-14;
   border-left: 4px solid $color-2;
   padding-left: 16px;
 }
 
+.bullet:focus .bullet-name,
 .bullet:hover .bullet-name {
   left: 66px;
   color: white;
 }
 
+.bullet:focus object,
 .bullet:hover object {
   opacity: 100%;
 }
